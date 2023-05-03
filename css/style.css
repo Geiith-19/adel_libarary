@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    direction: rtl;
+}
+:root{
+    --main-color : #f1f1f1;
+    --bg : #555 ;
+    --sub-color : #04AA6D ;
+    --btn-color: rgb(29, 104, 204);
+}
+.container{
+    display: flex;
+    width: 100vw;
+    height: 90px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(30,30,30);
+}
+
+.container ul{
+    display: inherit;
+    list-style: none;
+}
+.container ul li{
+    padding: 15px;
+    margin-left: 10px;
+}
+.container ul li a{
+    font-size: 20px;
+    text-decoration: none;
+    font-size: 16px;
+    pointer-events: none;
+    color: var(--main-color);
+}
+.container input{
+    width: 20%;
+    height: 30px;
+    border-radius: 20px;
+    outline: none;
+    border: var(--main-color) 1px solid;
+    text-indent: 20px;
+}
+.container ul li a:hover{
+    color:orangered;
+}
+
+.content{
+    margin: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.content .item{
+    width: 800px;
+    height: 400px;
+    background-color: var(--main-color);
+    box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.79);
+    margin-top: 40px;
+    text-align: center;
+    border-radius: 10px;
+}
+.content .sub-div{
+        width: 200px;
+        height: 200px;
+        background-color: var(--main-color);
+        /* box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.79); */
+        margin: 5px 15px;
+        text-align: center;
+        border-radius: 10px;
+}
+.content .sub-div img{
+    width: 100%;
+    height: 80%;
+}
+.content .sub-div h1{
+    font-size: 16px;
+    font-weight: 100;
+}
+.content a{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    /* z-index: -1; */
+    opacity: 0;
+}
+.content .posi-2{
+    position: absolute;
+    top: 60%;
+    left: 15%;
+    margin-top: 300px;
+}
+.content .posi-3{
+    height: 75%;
+    position: absolute;
+    top: 90%;
+    left: 15%;
+    margin-top: 500px;
+}
+.content .item img{
+    width: 33%;
+    height: 100%;
+    border-radius: inherit;
+}
+.sub-div img{
+    width: 300px;
+    height: 300px;
+}
